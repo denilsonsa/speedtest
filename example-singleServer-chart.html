@@ -154,7 +154,10 @@
                         }],
                         yAxes: [{
                             display: true,
-                            scaleLabel: 'Speed',
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Speed (Mbps)',
+                            },
                             ticks: {
                                 beginAtZero: true
                             }
@@ -184,7 +187,10 @@
                         }],
                         yAxes: [{
                             display: true,
-                            scaleLabel: 'Latency',
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Latency (ms)',
+                            },
                             ticks: {
                                 beginAtZero: true
                             }
