@@ -36,7 +36,7 @@ s.setParameter("telemetry_level","basic"); //enable telemetry
 //SERVER AUTO SELECTION
 function initServers(){
     var noServersAvailable=function(){
-        I("message").innerHTML="No servers available";
+        I("message").textContent="No servers available";
     }
     var runServerSelect=function(){
         s.selectServer(function(server){
@@ -148,7 +148,7 @@ function startStop(){
                         var shareURL=window.location.href.substring(0,window.location.href.lastIndexOf("/"))+"/results/?id="+testId;
                         I("resultsImg").src=shareURL;
                         I("resultsURL").value=shareURL;
-                        I("testId").innerHTML=testId;
+                        I("testId").textContent=testId;
                         I("shareArea").style.display="";
                     }
                 }catch(e){}

@@ -80,7 +80,7 @@ function startStop(){
                         var shareURL=window.location.href.substring(0,window.location.href.lastIndexOf("/"))+"/results/?id="+testId;
                         I("resultsImg").src=shareURL;
                         I("resultsURL").value=shareURL;
-                        I("testId").innerHTML=testId;
+                        I("testId").textContent=testId;
                         I("shareArea").style.display="";
                     }
                 }catch(e){}
